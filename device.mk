@@ -15,12 +15,16 @@
 #
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/samsung_slsi/arndale/kernel
+LOCAL_KERNEL := device/linaro/arndale
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
 PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+        device/linaro/common/init.partitions.rc:root/init.partitions.rc \
+        device/linaro/arndale/fstab.arndale:root/fstab.partitions \
+        device/linaro/arndale/vold.fstab:system/etc/vold.fstab \
+        device/linaro/arndale/egl.cfg:system/lib/egl/egl.cfg \
+        device/linaro/arndale/ueventd.arndale.rc:root/ueventd.rc
 
-$(call inherit-product-if-exists, vendor/samsung_slsi/arndale/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung_slsi/exynos5250/exynos5250-vendor.mk)
