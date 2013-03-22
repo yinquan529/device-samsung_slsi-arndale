@@ -22,6 +22,7 @@ TARGET_BOARD_PLATFORM := arndale
 TARGET_NO_KERNEL := false
 TARGET_KERNEL_SOURCE := kernel/linaro/arndale
 KERNEL_CONFIG := arndale_android_defconfig
+DEVICE_TREES := exynos5250-arndale:board.dtb
 TARGET_USE_UBOOT := true
 UBOOT_CONFIG := arndale5250
 TARGET_USE_XLOADER := false
