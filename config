@@ -1,4 +1,6 @@
 format: 3.0
+dtb_addr: '0x41f00000'
+dtb_name: board.dtb
 extra_serial_options:
  - console=tty0
  - console=ttySAC2,115200n8
@@ -11,7 +13,7 @@ initrd_addr: '0x41000000'
 kernel_addr: '0x40007000'
 kernel_flavors:
  - arndale
-load_addr: '0x40007000'
+load_addr: '0x40008000'
 mmc_option: '0:2'
 mmc_part_offset: 1
 serial_tty: ttySAC2

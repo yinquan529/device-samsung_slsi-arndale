@@ -25,6 +25,7 @@ KERNEL_CONFIG := arndale_android_defconfig
 DEVICE_TREES := exynos5250-arndale:board.dtb
 TARGET_USE_UBOOT := true
 UBOOT_CONFIG := arndale5250
+TARGET_HWPACK_CONFIG := device/linaro/arndale/config
 TARGET_USE_XLOADER := false
 TARGET_NO_RECOVERY := true
 TARGET_CPU_SMP := true
