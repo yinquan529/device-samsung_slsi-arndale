@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, device/linaro/common/common.mk)
 $(call inherit-product, device/linaro/arndale/device.mk)
 
 PRODUCT_NAME := full_arndale
