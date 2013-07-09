@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES := \
         device/linaro/arndale/fstab.arndale:root/fstab.partitions \
         device/linaro/arndale/vold.fstab:system/etc/vold.fstab \
         device/linaro/arndale/egl.cfg:system/lib/egl/egl.cfg \
-        device/linaro/arndale/ueventd.exynos5250-arndale.rc:root/ueventd.exynos5250-arndale.rc
+        device/linaro/arndale/ueventd.exynos5250-arndale.rc:root/ueventd.exynos5250-arndale.rc \
+        device/linaro/arndale/init.exynos5250-arndale.rc:root/init.exynos5250-arndale.rc
 
 $(call inherit-product-if-exists, vendor/samsung_slsi/exynos5250/exynos5250-vendor.mk)

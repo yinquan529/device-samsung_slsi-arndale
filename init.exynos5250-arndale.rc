@@ -1,0 +1,5 @@
+# To enable gralloc to read /proc/cmdline for
+# opening different framebuffer than defaulti
+
+on post-fs
+	chmod 0444 /proc/cmdline
