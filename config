@@ -8,6 +8,7 @@ extra_serial_options:
 android_specific_args:
  - init=/init
  - androidboot.console=ttySAC2
+ - fbdev=/dev/graphics/fb2
 boot_script: boot.scr
 bootloader_flavor: arndale
 initrd_addr: '0x41000000'
