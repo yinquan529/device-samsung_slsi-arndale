@@ -29,3 +29,4 @@ PRODUCT_COPY_FILES := \
         device/linaro/arndale/init.exynos5250-arndale.rc:root/init.exynos5250-arndale.rc
 
 $(call inherit-product-if-exists, vendor/samsung_slsi/exynos5250/exynos5250-vendor.mk)
+$(call inherit-product-if-exists, frameworks/native/build/tablet-dalvik-heap.mk)
