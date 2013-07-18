@@ -2,6 +2,6 @@
 # system.prop
 #
 
-ro.sf.lcd_density=240
+ro.sf.lcd_density=160
 debug.sf.no_hw_vsync=1
 ro.nohardwaregfx=true
