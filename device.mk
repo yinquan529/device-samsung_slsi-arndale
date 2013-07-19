@@ -30,5 +30,8 @@ PRODUCT_COPY_FILES := \
 
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 
+DEVICE_PACKAGE_OVERLAYS := \
+    device/linaro/arndale/overlay
+
 $(call inherit-product-if-exists, vendor/samsung_slsi/exynos5250/exynos5250-vendor.mk)
 $(call inherit-product-if-exists, frameworks/native/build/tablet-dalvik-heap.mk)
