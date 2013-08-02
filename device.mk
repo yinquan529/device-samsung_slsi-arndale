@@ -23,6 +23,7 @@ endif
 PRODUCT_COPY_FILES := \
         device/linaro/common/init.partitions.rc:root/init.partitions.rc \
         device/linaro/arndale/fstab.arndale:root/fstab.partitions \
+        device/linaro/arndale/fstab.arndale:root/fstab.exynos5250-arndale \
         device/linaro/arndale/vold.fstab:system/etc/vold.fstab \
         device/linaro/arndale/egl.cfg:system/lib/egl/egl.cfg \
         device/linaro/arndale/ueventd.exynos5250-arndale.rc:root/ueventd.exynos5250-arndale.rc \
