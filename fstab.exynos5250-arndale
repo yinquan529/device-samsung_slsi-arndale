@@ -7,5 +7,4 @@
 /dev/block/mmcblk1p3    		/system             ext4      rw                                                    wait
 /dev/block/mmcblk1p5    		/cache              ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic    wait
 /dev/block/mmcblk1p6    		/data               ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic    wait
-/devices/dw_mmc.2/mmc_host/mmc1     	/mnt/sdcard         vfat      defaults						    voldmanaged=sdcard:7
-
+/devices/dw_mmc.2/mmc_host/mmc1         auto                vfat      defaults                                              voldmanaged=sdcard0:7,noemulatedsd

@@ -1,14 +1,18 @@
-on early-init
-    export EXTERNAL_STORAGE /mnt/sdcard
-    mkdir /storage 0050 system sdcard_r
-    # for backwards compatibility
-    symlink /mnt/sdcard /storage/sdcard0
+on init
+    mkdir /mnt/media_rw/sdcard0 0700 media_rw media_rw
+    mkdir /storage/sdcard0 0700 root root
 
-on fs
-    mount_all /fstab.exynos5250-arndale
+    export EXTERNAL_STORAGE /storage/sdcard0
+
+service fuse_sdcard0 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard0 /storage/sdcard0
+    class late_start
+    disabled
 
 # To enable gralloc to read /proc/cmdline for
 # opening different framebuffer than default
 
 on post-fs
 	chmod 0444 /proc/cmdline
+
+on fs
+    mount_all /fstab.exynos5250-arndale
