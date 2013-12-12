@@ -1,6 +1,7 @@
 format: 3.0
 dtb_addr: '0x41f00000'
 dtb_name: board.dtb
+samsung_env_len: 2000
 extra_serial_options:
  - console=tty0
  - console=ttySAC2,115200n8
